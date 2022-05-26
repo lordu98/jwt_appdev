@@ -30,7 +30,7 @@ public class AppSecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService);
 
-                /*.inMemoryAuthentication()
+                /*.inMemoryAuthentication()/
                 .withUser("employee")
                 .password("$2a$10$B/Pim1zTnN.0fw7Mr4kJYeQwv8hvbjJ85DtKKez2yVJhulywUez76")
                 .roles("EMPLOYEE")
